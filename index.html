@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوت جيزي - مساعدك على فيسبوك</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Facebook SDK -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: 'YOUR_APP_ID', // استبدل برقم التطبيق الحقيقي
+                xfbml: true,
+                version: 'v19.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/ar_AR/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في بوت جيزي 🤖</h1>
+        <p>مساعدك الذكي للرد على استفساراتك عبر فيسبوك ماسنجر</p>
+    </header>
+
+    <main>
+        <section class="cta">
+            <a href="https://m.me/YOUR_PAGE_USERNAME" class="messenger-btn">
+                تحدث مع البوت الآن
+            </a>
+        </section>
+
+        <section class="features">
+            <h2>ماذا يمكن للبوت فعله؟</h2>
+            <ul>
+                <li>الرد على الاستفسارات العامة</li>
+                <li>تقديم المساعدة الفنية</li>
+                <li>توجيهك إلى المعلومات المطلوبة</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 بوت جيزي. جميع الحقوق محفوظة.</p>
+        <p><a href="privacy.html">سياسة الخصوصية</a></p>
+    </footer>
+</body>
+</html>
